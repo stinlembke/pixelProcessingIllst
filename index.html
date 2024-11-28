@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Page 2 DRW Final</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+        align-items: center;
+        justify-content: center;
+        background-image: url(media/plateLarge.jpg);
+        background-position: center;
+      }
+
+      .container {
+        margin: auto;
+      }
+
+      svg {
+        fill: blue;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+      }
+
+      .imgContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      .img {
+        clip-path: url("#pattern");
+        width: 200px;
+        height: 200px;
+        height: auto;
+        margin: auto;
+      }
+
+      @media (max-width: 450px) {
+        .imgContainer {
+          flex-direction: column;
+        }
+        .container {
+          flex-direction: column;
+        }
+        
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <svg width="201" height="201" viewBox="0 0 201 201" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <clipPath id="pattern">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M149.236 49.2858L149.236 49.2474C149.236 22.1887 127.3 0.253296 100.242 0.253296C73.183 0.253296 51.2476 22.1887 51.2476 49.2474L51.2476 49.2858C77.8202 50.3108 99.1781 71.6688 100.203 98.2415L100.242 98.2415L100.28 98.2415C101.305 71.6686 122.663 50.3105 149.236 49.2858ZM51.2476 151.236L51.2476 151.197C77.8202 150.172 99.178 128.814 100.203 102.242L100.242 102.242L100.28 102.242C101.305 128.814 122.663 150.172 149.236 151.197L149.236 151.236C149.236 178.294 127.3 200.23 100.242 200.23C73.183 200.23 51.2476 178.294 51.2476 151.236ZM51.2893 149.194C76.7239 148.151 97.1569 127.718 98.1996 102.283C72.7651 103.326 52.3321 123.759 51.2893 149.194ZM49.2861 149.236C50.311 122.663 71.6688 101.305 98.2414 100.28L98.2414 100.241L98.2414 100.203C71.6687 99.178 50.3109 77.82 49.2861 51.2473L49.2473 51.2473C22.1886 51.2473 0.253174 73.1827 0.253174 100.241C0.253174 127.3 22.1886 149.236 49.2473 149.236L49.2861 149.236ZM149.194 149.194C123.759 148.151 103.326 127.718 102.283 102.283C127.718 103.326 148.151 123.759 149.194 149.194ZM102.241 100.28C128.814 101.305 150.172 122.663 151.197 149.236L151.236 149.236C178.294 149.236 200.23 127.3 200.23 100.241C200.23 73.1827 178.294 51.2473 151.236 51.2473L151.197 51.2473C150.173 77.8202 128.814 99.1783 102.241 100.203L102.241 100.241L102.241 100.28ZM149.194 51.2891C123.759 52.3316 103.326 72.765 102.283 98.1998C127.718 97.1572 148.151 76.7239 149.194 51.2891ZM98.1996 98.1998C97.157 72.7651 76.7239 52.3319 51.2894 51.2891C52.332 76.7237 72.7651 97.1569 98.1996 98.1998Z" fill="#D9D9D9"/>
+              </svg>
+              
+          </clipPath>
+        </defs>
+      </svg>
+      <div class="imgContainer">
+        <a href="page2.html"><img
+          class="img"
+          id="hlPlate"
+          src="media/HLPlateSmaller.PNG"
+          width="680"
+          height="807"
+        /></a>
+        <a href="page1.html"><img class="img" id="hlStone" src="media/HLCeramicSmaller.jpg" /></a>
+        <a href="page3.html"><img class="img" id="ded" src="media/dedImageSmaller.jpg" /></a>
+      </div>
+    </div>
+    <!-- <script src="page2copy.js"></script> -->
+  </body>
+</html>

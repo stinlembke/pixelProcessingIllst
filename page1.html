@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>redrawing Honey Locust Test</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        height: 450vh;
+        align-items: center;
+        justify-content: center;
+        overflow-y: scroll;
+      }
+
+      .container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        margin: auto;
+        height: 100vh;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        background-image: url(media/plate3.jpg);
+        background-position: center;
+        /* background-color: aliceblue; */
+      }
+
+      img {
+        display: none;
+        height: 100%;
+        width: auto;
+      }
+
+      canvas {
+        position: absolute;
+        margin: auto;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <svg height="220" width="500" xmlns="http://www.w3.org/2000/svg">
+      <polygon points="100,10 150,190 50,190" />
+    </svg> -->
+    <div class="container">
+      <img src="media/HLCeramic.jpg" width="400" height="720" />
+      <canvas></canvas>
+    </div>
+    <script src="page1.js"></script>
+  </body>
+</html>
